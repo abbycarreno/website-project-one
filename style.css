@@ -129,9 +129,10 @@ p:last-child {
 }
 
 .subtitle {
+  font-family: "Quattrocento", serif;
   display: block;
   text-transform: lowercase;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 1rem;
   font-weight: 500;
 }
@@ -150,6 +151,10 @@ nav a {
   display: inline-block;
   padding: 0.5rem;
   margin: 0 1%;
+}
+
+header a:hover, nav a:hover {
+  color: rgb(0,0,0, .6);
 }
 
 header a:hover {
@@ -173,12 +178,26 @@ nav button:hover {
 }
 
 .logo {
+  display: block;
   background-image: url(/assets/logo.svg);
   background-position: center;
   background-size: contain;
   width: 150px;
   padding: 2rem;
   background-repeat: no-repeat;
+}
+
+.copyright {
+  font-size: .875rem;
+  font-family: "Quattrocento", serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: .5rem;
+}
+
+footer p {
+  font-size: .875rem;
+  margin: 0 1%;
 }
 
 /* buttons */
@@ -287,5 +306,11 @@ img {
 /* cta section */
 
 .cta-bg {
-  background-color: #e9b186;
+  background-color: #e5c5b9;
 }
+
+/* Mobile devices – 320px — 480px
+iPads, Tablets – 481px — 768px
+Small screens, laptops – 769px — 1024px
+Desktops, large screens – 1025px — 1200px
+Extra large screens, TV – 1201px, and more */

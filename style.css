@@ -153,8 +153,9 @@ nav a {
   margin: 0 1%;
 }
 
-header a:hover, nav a:hover {
-  color: rgb(0,0,0, .6);
+header a:hover,
+nav a:hover {
+  color: rgb(0, 0, 0, 0.6);
 }
 
 header a:hover {
@@ -188,15 +189,15 @@ nav button:hover {
 }
 
 .copyright {
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-family: "Quattrocento", serif;
   text-transform: uppercase;
   font-weight: 600;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 footer p {
-  font-size: .875rem;
+  font-size: 0.875rem;
   margin: 0 1%;
 }
 
@@ -218,7 +219,7 @@ footer p {
   background-color: rgb(60, 60, 60, 0.8);
 }
 
-/* images */
+/* images & video */
 
 img {
   width: 100%;
@@ -266,6 +267,11 @@ img {
   -webkit-border-radius: 0px 0px 110px 0px;
 }
 
+iframe {
+  height: 500px;
+  width: 600px;
+}
+
 /* icons */
 
 .fa-hand-holding-heart {
@@ -309,8 +315,82 @@ img {
   background-color: #e5c5b9;
 }
 
-/* Mobile devices – 320px — 480px
-iPads, Tablets – 481px — 768px
-Small screens, laptops – 769px — 1024px
-Desktops, large screens – 1025px — 1200px
-Extra large screens, TV – 1201px, and more */
+/* Desktops, large screens – 1025px — 1200px */
+/* applies to max 1024px */
+@media (max-width: 64em) {
+  /*  */
+}
+
+/* applies to max 946px */
+@media (max-width: 59.125em) {
+  iframe {
+    height: 400px;
+    width: 500px;
+  }
+}
+
+/* Small screens, laptops – 769px — 1024px */
+/* applies to max 768px */
+@media (max-width: 48em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* iPads, Tablets – 481px — 768px */
+/* applies to max 576px */
+@media (max-width: 36em) {
+  [class~="grid"] > [class*="col-6"] {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.875rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .padded-no-btm {
+    margin-bottom: 30px;
+  }
+
+  .right,
+  .left {
+    text-align: center;
+  }
+  iframe {
+    height: auto;
+    width: auto;
+  }
+
+  .margin-btm-60 {
+    margin-bottom: 30px;
+  }
+}
